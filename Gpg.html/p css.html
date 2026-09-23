@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        .cont{
+            height: 200px;
+            width: 200px;
+        }
+        
+        .two{
+            background-color: blue;
+            position: relative;
+            z-index: 2;
+            top: 10px;
+        }
+
+        .one{
+            background-color: chocolate;
+            position: absolute;
+            top: 100px;
+            left: 50px;
+            z-index: 6;
+        }
+        
+        .three{
+            background-color: aquamarine;
+            position: relative;
+            top: 30px;
+            z-index: 50;
+            left: 100px;
+        }
+
+        .four{
+            background-color: rgb(255, 192, 203);
+            position: relative;
+            left: 300px;
+            top: -170px;
+        }
+
+        .five{
+            background-color: crimson;
+             position: relative;
+            left: 400px;
+            top: -500px;
+            z-index: -20;
+            
+        }
+        
+        .six{
+            background-color: yellow;
+            position: relative;
+            left: 550px;
+            top: -790px;
+        }
+
+        .seven{
+            background-color: burlywood;
+            position: relative;
+            left: 200px;
+            top: -690px;
+            z-index: 50;
+        }
+
+        img {
+            display: none;
+        }
+
+        .pp{
+            height: 500px;
+            width: 500px;
+            border: 2px solid rgb(0, 0, 0);
+        }
+
+        .pp:hover img{
+            display: block;
+        }
+        
+        #input:focus{
+            border: 2px solid;
+            background-color: chartreuse;
+            box-shadow: 5px 5px 5px red;
+        }
+        
+        .cont p:first-child{
+            background-color: #ff0022;
+            width: 1000px;
+        }
+        
+        .dd li:first-child{
+            background-color: #ff0022;
+        }
+
+        .dd li:last-child{
+            background-color: #19dd50;
+        }
+
+        .dd li:nth-child(even){
+            background-color: #230de8;
+        }
+        
+        .dp li{
+            list-style-type: none;
+        }
+
+        .dp li::before{
+            content: "★ 👉 ";
+            color: #e802d1;
+        }
+    
+         .dp li::after{
+            content: "★ 👉 ";
+            color: #e802d1;
+        }
+
+        .dpd::first-line{
+            color: #e802d1;
+            font-size: 20px;
+        }
+
+        .dpd::first-line{
+            color: #e802d1;
+            font-size: 20px;
+           
+        }
+
+        .ll::first-letter{
+            color: #ff0022;
+            font-size: 40px;
+            font-family: cursive;
+        }
+
+        .l{
+            background: url(file_00000000b9f882118597a1e7e3dbf357.png) center/cover;
+            position: relative;
+            color: rgb(226, 15, 15);
+            width: 500px;
+            height: 500px;
+        }
+
+        .l::after{
+            content: "";
+            background-color: rgba(73, 150, 72, 0.5);
+            position: absolute;
+            inset: 0;
+        }
+
+        .l:hover::after{
+            background-color: rgba(73, 150, 72, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="cont one"></div>
+    
+    <div class="cont two"></div>
+
+    <div class="cont three"></div>
+
+    <div class="cont four"></div>
+
+    <div class="cont five"></div>
+
+    <div class="cont six"></div>
+
+    <div class="cont seven"></div>
+
+    <div class="pp">
+        <img class="image" src="profesional photo.png" alt="" height="500px" width="500px"><br><br>
+        <img class="image" src="profesional photo.png" alt="" height="500px" width="500px">
+    </div><br>
+
+    <input type="text" id="input" placeholder="Enter Your Name :-">
+    <div class="cont">
+        <p>prakash</p>
+        <p>dev</p>
+    </div>
+    
+    <ul class="dd">
+  <li>Home</li>
+  <li>About</li>
+  <li>Contact</li>
+  <li>one</li>
+  <li>Two</li>
+</ul>
+   
+<div>
+    <ul class="dp">
+  <li>Home</li>
+  <li>About</li>
+  <li>Contact</li>
+  <li>one</li>
+  <li>Two</li>
+</ul>
+</div>  
+
+<div class="dpd">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt sint delectus modi qui nesciunt voluptate, explicabo sequi consectetur excepturi, ad recusandae dolorem illo quis iusto repellat hic vel porro aliquam fugit facere debitis nam? Dolorum, culpa! Alias, architecto vero error et, dolorum natus veniam nemo exercitationem delectus voluptas quia suscipit maxime quam nihil quibusdam incidunt vitae nam necessitatibus vel magnam odio similique? Repudiandae id esse magni doloremque expedita, quas debitis voluptatem numquam tempora quisquam harum est voluptates quasi at reiciendis ipsa iusto minima similique repellendus, aspernatur adipisci laudantium. Dignissimos ea blanditiis tempora provident illo doloremque neque dolore minima, tenetur reprehenderit.</p>
+
+</div>
+
+<div class="ll">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nam eaque laboriosam optio consequatur repellendus omnis odio iure corrupti veniam?
+</div>
+<div class="l">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, animi distinctio blanditiis optio veritatis, repellendus culpa eveniet minima porro, dicta officia ipsum minus. Illum fuga quia quaerat in excepturi. Labore id reprehenderit, culpa nesciunt voluptas nisi delectus quod totam magnam adipisci eligendi explicabo voluptatum ullam necessitatibus recusandae? Pariatur, maiores fugit.
+</div>
+
+</body> 
+</html>
