@@ -135,7 +135,7 @@
         }
 
         .l{
-            background: url(file_00000000b9f882118597a1e7e3dbf357.png) center/cover;
+            background: url(CSS/file_00000000b9f882118597a1e7e3dbf357.png) center/cover;
             position: relative;
             color: rgb(226, 15, 15);
             width: 500px;
@@ -151,6 +151,18 @@
 
         .l:hover::after{
             background-color: rgba(73, 150, 72, 0);
+        }
+
+        [title*=" "]{
+            background-color: #e802d1;
+        }
+
+        [title~="p"]{
+            background-color: #ff0022;
+        }
+
+        [href$=".com"]{
+            background-color: aqua;
         }
     </style>
 </head>
@@ -210,6 +222,14 @@
 <div class="l">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, animi distinctio blanditiis optio veritatis, repellendus culpa eveniet minima porro, dicta officia ipsum minus. Illum fuga quia quaerat in excepturi. Labore id reprehenderit, culpa nesciunt voluptas nisi delectus quod totam magnam adipisci eligendi explicabo voluptatum ullam necessitatibus recusandae? Pariatur, maiores fugit.
 </div>
+
+<a href="" title="links">I am Find</a>
+<a href="" title="link with title">DvePrakash</a>
+<a href="" title="dp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia in consectetur, ad totam alias ab, possimus pariatur impedit quam natus rerum at neque exercitationem sunt dignissimos maiores voluptatum atque tempore.</a>
+<a href="" title="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, eos! Tenetur unde repellendus asperiores. Obcaecati perspiciatis fuga totam laboriosam eaque placeat iure deserunt deleniti incidunt iste, exercitationem suscipit distinctio nihil!</a>
+
+<a href="abc.com" title="pp">I Am Find</a>
+
 
 </body> 
 </html>
