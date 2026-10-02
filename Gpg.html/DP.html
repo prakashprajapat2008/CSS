@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit Kumar</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+    body {
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+.mainPage {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(244, 247, 249);
+    background: url(405360-middle.png) center/cover;
+}
+
+header {
+    width: inherit;
+    height: 12%;
+}
+
+.navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: inherit;
+    height: 100%;
+    gap: 50px;
+}
+
+.navBarLogo {
+    background-image: url(https://cdn.shopify.com/s/files/1/0593/5530/0045/articles/Myntra-Logo-PNG-ovjndf3.png?v=1705320261);
+    width: 70px;
+    height: 50px;
+    background-size: contain;
+}
+
+.navBarLinksList {
+    list-style-type: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 600px;
+}
+
+.navBarLinksList a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.navBarSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F6;
+    padding: 10px;
+    gap: 20px;
+    padding-right: 150px;
+    border-radius: 5px;
+}
+
+.navBarSearch input {
+    border: none;
+    background-color: #F5F5F6;
+}
+
+.navBarButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.navBarButtons p {
+    font-size: small;
+    margin-top: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.navBarButtons-Profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBarButtons-Wishlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBarButtons-Bag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBarLinksList-MEN {
+    position: relative;
+}
+
+.navBarLinksList .dropdown-MEN {
+    display: none;
+}
+
+.navBarLinksList .navBarLinksList-MEN:hover .dropdown-MEN {
+    display: flex;
+    position: absolute;
+    top: 80px;
+    gap: 50px;
+    width: 1200px;
+    justify-content: left;
+    padding: 10px;
+    margin-top: -20px;
+    background-color: white;
+}
+
+.navBarLinksList .navBarLinksList-MEN:hover #dropdown-MEN-line {
+    position: relative;
+    top: 30px;
+    width: 60px;
+    height: 5px;
+    border: none;
+    background-color: #EE5F73;
+    z-index: 1;
+}
+
+.navBarLinksList .navBarLinksList-MEN .dropdown-MEN .dropdown-MEN2 {
+    background-color: #F8F8F8;
+}
+
+.navBarLinksList .navBarLinksList-MEN .dropdown-MEN .dropdown-MEN4 {
+    background-color: #F8F8F8;
+}
+
+.navBarLinksList .navBarLinksList-MEN .dropdown-MEN .dropdown-MEN1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navBarLinksList .navBarLinksList-MEN .dropdown-MEN .dropdown-MEN2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navBarLinksList .navBarLinksList-MEN .dropdown-MEN .dropdown-MEN3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navBarLinksList .navBarLinksList-MEN .dropdown-MEN .dropdown-MEN4 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navBarLinksList .navBarLinksList-MEN .dropdown-MEN .dropdown-MEN5 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dropdown-MEN ul {
+    list-style-type: none;
+}
+
+.navBarLinksList .redLink {
+    color: #EE5F73;
+    font-size: small;
+    font-weight: 700;
+}
+
+.navBarLinksList .blackLink {
+    color: black;
+    font-size: small;
+    font-weight: 400;
+}
+
+.b{
+  color: #d30521;
+  display: flex;
+}
+
+</style>
+</head>
+<body>
+    <div class="mainPage">
+        <header>
+            <div class="navBar">
+                <div class="navBarLogo">
+                </div>
+              <div class="navBarLinks">
+                    <ul class="navBarLinksList">
+                        <li class="navBarLinksList-MEN"><a href="">MEN</a>
+                            <hr id="dropdown-MEN-line">
+                            <div class="dropdown-MEN">
+                                <div class="dropdown-MEN1">
+                                    <div class="dropdown-MEN1-1">
+                                        <ul>
+                                            <li><a href="" class="redLink">Topwear</a></li>
+                                            <li><a href="" class="blackLink">T-Shirts</a></li>
+                                            <li><a href="" class="blackLink">Casual Shirts</a></li>
+                                            <li><a href="" class="blackLink">Formal Shirts</a></li>
+                                            <li><a href="" class="blackLink">Sweatshirts</a></li>
+                                            <li><a href="" class="blackLink">Sweaters</a></li>
+                                            <li><a href="" class="blackLink">Jacket</a></li>
+                                            <li><a href="" class="blackLink">Blazers & Coats</a></li>
+                                            <li><a href="" class="blackLink">Suits</a></li>
+                                            <li><a href="" class="blackLink">Rain Jackets</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-MEN1-line">
+                                        <hr>
+                                    </div>
+                                    <div class="dropdown-MEN1-2">
+                                        <ul>
+                                            <li><a href="" class="redLink">Indian & Festive Wear</a></li>
+                                            <li><a href="" class="blackLink">Kurtas & Kurta Sets</a></li>
+                                            <li><a href="" class="blackLink">Sherwanis</a></li>
+                                            <li><a href="" class="blackLink">Nehru Jackets</a></li>
+                                            <li><a href="" class="blackLink">Dhotis</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="dropdown-MEN2">
+                                    <div class="dropdown-MEN2-1">
+                                        <ul>
+                                            <li><a href="" class="redLink">Bottomwear</a></li>
+                                            <li><a href="" class="blackLink">Jeans</a></li>
+                                            <li><a href="" class="blackLink">Casual Trousers</a></li>
+                                            <li><a href="" class="blackLink">Formal Trousers</a></li>
+                                            <li><a href="" class="blackLink">Shorts</a></li>
+                                            <li><a href="" class="blackLink">Track Pants & Joggers</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-MEN1-line">
+                                        <hr>
+                                    </div>
+                                    <div class="dropdown-MEN2-2">
+                                        <ul>
+                                            <li><a href="" class="redLink">Innerwear & Sleepwear</a></li>
+                                            <li><a href="" class="blackLink">Briefs & Trunks</a></li>
+                                            <li><a href="" class="blackLink">Boxers</a></li>
+                                            <li><a href="" class="blackLink">Vests</a></li>
+                                            <li><a href="" class="blackLink">Sleepwear & Loungewear</a></li>
+                                            <li><a href="" class="blackLink">Thermals</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-MEN1-line">
+                                        <hr>
+                                    </div>
+                                    <div class="dropdown-MEN2-3">
+                                        <ul>
+                                            <li><a href="" class="redLink">Plus Size</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="dropdown-MEN3">
+                                    <div class="dropdown-MEN3-1">
+                                        <ul>
+                                            <li><a href="" class="redLink">Footwear</a></li>
+                                            <li><a href="" class="blackLink">Casual Shoes</a></li>
+                                            <li><a href="" class="blackLink">Sports Shoes</a></li>
+                                            <li><a href="" class="blackLink">Formal Shoes</a></li>
+                                            <li><a href="" class="blackLink">Sneakers</a></li>
+                                            <li><a href="" class="blackLink">Sandals & Floaters</a></li>
+                                            <li><a href="" class="blackLink">Flip Flops</a></li>
+                                            <li><a href="" class="blackLink">Socks</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-MEN1-line">
+                                        <hr>
+                                    </div>
+                                    <div class="dropdown-MEN3-2">
+                                        <ul>
+                                            <li><a href="" class="redLink">Personal Care & Grooming</a></li>
+                                            <li><a href="" class="redLink">Sunglasses & Frames</a></li>
+                                            <li><a href="" class="redLink">Watches</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="dropdown-MEN4">
+                                    <div class="dropdown-MEN4-1">
+                                        <ul>
+                                            <li><a href="" class="redLink">Sports</a></li>
+                                            <li><a href="" class="blackLink">Sports Shoes</a></li>
+                                            <li><a href="" class="blackLink">Sports Sandals</a></li>
+                                            <li><a href="" class="blackLink">Active T-Shirts</a></li>
+                                            <li><a href="" class="blackLink">Track Pants & Shorts</a></li>
+                                            <li><a href="" class="blackLink">Tracksuits</a></li>
+                                            <li><a href="" class="blackLink">Jackets & Accessories</a></li>
+                                            <li><a href="" class="blackLink">Sports Accessories</a></li>
+                                            <li><a href="" class="blackLink">Swimwear</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-MEN1-line">
+                                        <hr>
+                                    </div>
+                                    <div class="dropdown-MEN4-2">
+                                        <ul>
+                                            <li><a href="" class="redLink">Gadgets</a></li>
+                                            <li><a href="" class="blackLink">Smart Wearables</a></li>
+                                            <li><a href="" class="blackLink">Fitness Gadgets</a></li>
+                                            <li><a href="" class="blackLink">Hedphones</a></li>
+                                            <li><a href="" class="blackLink">Speakers</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="dropdown-MEN5">
+                                    <div class="dropdown-MEN5-1">
+                                        <ul>
+                                            <li><a href="" class="redLink">Fashion Accessories</a></li>
+                                            <li><a href="" class="blackLink">Wallets</a></li>
+                                            <li><a href="" class="blackLink">Belts</a></li>
+                                            <li><a href="" class="blackLink">Perfumes & Body Mists</a></li>
+                                            <li><a href="" class="blackLink">Trimmers</a></li>
+                                            <li><a href="" class="blackLink">Deodrants</a></li>
+                                            <li><a href="" class="blackLink">Ties, Cufflinks & Pocket</a></li>
+                                            <li><a href="" class="blackLink">Squares</a></li>
+                                            <li><a href="" class="blackLink">Accessory Gift Sets</a></li>
+                                            <li><a href="" class="blackLink">Caps & Hats</a></li>
+                                            <li><a href="" class="blackLink">Mufflers, Scarves & Gloves</a></li>
+                                            <li><a href="" class="blackLink">Phone Cases</a></li>
+                                            <li><a href="" class="blackLink">Rings & Wristwear</a></li>
+                                            <li><a href="" class="blackLink">Helmets</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-MEN1-line">
+                                        <hr>
+                                    </div>
+                                    <div class="dropdown-MEN5-2">
+                                        <ul>
+                                            <li><a href="" class="redLink">Bags & Backpacks</a></li>
+                                            <li><a href="" class="redLink">Luggages & Trolleys</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="">WOMEN</a></li>
+                        <li><a href="">KIDS</a></li>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">BEAUTY</a></li>
+                        <li><a href="">GENZ</a></li>
+                        <li><a href="">STUDIO</a></li>
+                    </ul>
+                </div>
+                 
+                <div class="b">
+                  <p1>NEW</p1>
+                </div>
+
+                <div class="navBarSearch">
+                    <span>
+                        <svg width="15px" height="15px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    </span>
+                    <input type="text" placeholder="Search for products, brands and more" name="" id="">
+                </div>
+                <div class="navBarButtons">
+                    <div class="navBarButtons-Profile">
+                        <svg width="20px" height="20px" viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12.0001 13.09C14.4909 13.09 16.5101 11.0708 16.5101 8.58C16.5101 6.08919 14.4909 4.07 12.0001 4.07C9.5093 4.07 7.49011 6.08919 7.49011 8.58C7.49011 11.0708 9.5093 13.09 12.0001 13.09Z" stroke="#0F0F0F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M8.98008 11.91C8.97008 11.91 8.97008 11.91 8.96008 11.92" stroke="#0F0F0F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M16.9701 12.82C19.5601 14.4 21.3201 17.19 21.5001 20.4C21.5101 20.69 21.2801 20.93 20.9901 20.93H3.01007C2.72007 20.93 2.49007 20.69 2.50007 20.4C2.68007 17.21 4.43007 14.43 6.99007 12.85" stroke="#0F0F0F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        <p>Profile</p>
+                    </div>
+                    <div class="navBarButtons-Wishlist">
+                        <svg width="20px" height="20px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="#000000" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M9.06,25C7.68,17.3,12.78,10.63,20.73,10c7-.55,10.47,7.93,11.17,9.55a.13.13,0,0,0,.25,0c3.25-8.91,9.17-9.29,11.25-9.5C49,9.45,56.51,13.78,55,23.87c-2.16,14-23.12,29.81-23.12,29.81S11.79,40.05,9.06,25Z"></path></g></svg>
+                        <p>Wishlist</p>
+                    </div>
+                    <div class="navBarButtons-Bag">
+                        <svg width="20px" height="20px" viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M17.25 7.88501H18.31L19.37 21.425C19.39 21.715 19.16 21.965 18.87 21.965L5.13 22.005C4.84 22.005 4.61 21.755 4.63 21.465L5.60999 7.92502H6.71" stroke="#0F0F0F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M13.25 8.95502H10.72" stroke="#0F0F0F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M15.25 10.605V6.33499C15.25 4.48499 13.79 2.995 11.99 2.995C10.19 2.995 8.72998 4.49499 8.72998 6.33499V10.605" stroke="#0F0F0F" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        <p>Bag</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+</body>
+</html>
