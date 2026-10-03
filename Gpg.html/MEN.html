@@ -126,22 +126,40 @@
   width: 30vw;
   height: 40vh;
   background-color: #d7e11c;
-   font-size: 5vw;
+  font-size: 5vw;
   font-size: 4vh;
   border: 0.5rem solid rgb(0, 0, 0);
   padding: 2em;
-
+  transform: translate(50%, 50%);
+  color: #0000007a;
 }
 
 .menu {
   width: 100px;
-  height: 100px;
+  height: 300px;
   margin: 10px;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  
 }
 
 .menu ul {
   list-style-type: none;
+  position: absolute;
+  top: 75px;
+  margin-left: -40px;
+}
+
+.container .w{
+  list-style-type: none;
+    position: absolute;
+  top: 75px;
+  margin-left: -40px;
+  background-color: rgb(222, 122, 8);
+  border: 2px solid black;
+  width: 120px;
 }
 
 .menu svg{
@@ -151,12 +169,38 @@
 
 }
 
-.menu ul li {
+.menu .praveen {
   background-color: rgb(222, 122, 8);
+  border: 2px solid black;
+  width: 120px;
 }
 
-.menu:hover ul{
+
+.menu:hover .praveen{
   display: block;
+}
+
+.container:hover .w{
+  display: block;
+}
+.praveen{
+  display: none;
+}
+
+.w{
+  display: none;
+}
+
+@media all and (max-width:780px){
+  .prakash{
+    display: none;
+  }
+  .button btn{
+    display: none;
+  }
+.btn{
+  display: none;
+}
 }
 
 
@@ -169,11 +213,50 @@
 
     <div class="container">
       <img src="images (1).jpg" alt="Logo" class="logo" width="50px" height="50px"> 
+
+       <ul class="w">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>Prakash</li>
+            <li>Dev</li>
+            <li>Praveen</li>
+            <li>Ashok</li>
+            <li>Prajapat</li>
+            <li>consectetur</li>
+            <li>Lorem</li>
+            <li>Guru</li>
+            <li>voluptates</li>
+            <li>similique</li>
+            <li>Corrupti</li>
+            <li>numquam</li>
+            <li>laudantium</li>
+            <li>voluptas</li>
+            <li>dignissimos</li>
+             <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>Prakash</li>
+            <li>Dev</li>
+            <li>Prajapat</li>
+            <li>consectetur</li>
+            <li>Guru</li>
+            <li>voluptates</li>
+            <li>similique</li>
+            <li>Corrupti</li>
+            <li>numquam</li>
+            <li>laudantium</li>
+            <li>voluptas</li>
+            <li>dignissimos</li>
+        </ul>
+
     </div>
     
     <div class="links">
    
-     <ul>
+     <ul class="prakash">
        <li>Home</li>
        <li>About</li>
        <li>Services</li>
@@ -182,20 +265,55 @@
     </div>
 
      <div class="button">
-       <button>Search</button>
-       <button>Login</button>
+       <button class="btn">Search</button>
+       <button class="btn">Login</button>
      </div>
 
      <div class="menu">
-        <svg width="65px" height="65px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+        <svg width="70px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
 
-        <ul>
+        <ul class="praveen">
             <li>Home</li>
             <li>About</li>
             <li>Services</li>
             <li>Contact</li>
+            <li>Prakash</li>
+            <li>Dev</li>
+            <li>Praveen</li>
+            <li>Ashok</li>
+            <li>Prajapat</li>
+            <li>consectetur</li>
+            <li>Lorem</li>
+            <li>Guru</li>
+            <li>voluptates</li>
+            <li>similique</li>
+            <li>Corrupti</li>
+            <li>numquam</li>
+            <li>laudantium</li>
+            <li>voluptas</li>
+            <li>dignissimos</li>
+             <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>Prakash</li>
+            <li>Dev</li>
+            <li>Prajapat</li>
+            <li>consectetur</li>
+            <li>Guru</li>
+            <li>voluptates</li>
+            <li>similique</li>
+            <li>Corrupti</li>
+            <li>numquam</li>
+            <li>laudantium</li>
+            <li>voluptas</li>
+            <li>dignissimos</li>
         </ul>
+
       </div>
+
+      
+
    </nav><br>
 
 
@@ -226,7 +344,7 @@
 </div>
 
 <div class="vh-box">
-  lorem ipsum dolor sit amet consectetur adipisicing elit. Est impedit odio voluptatem nam maiores, repudiandae fugit iste aut. Amet quae corrupti impedit facilis dolores itaque quis modi aliquid? Quia, eveniet.</div>
+  lorem ipsum dolor sit amet consectetur adipisicing elit. Est impedit odio voluptatem nam maiores, repudiandae fugit iste aut. Amet quae corrupti impedit facilis dolores itaque quis modi aliquid? Quia, eveniet. lorem ipsum dolor sit amet consectetur adipisicing elit. Est impedit odio voluptatem nam maiores.</div>
 
    
 </body>
