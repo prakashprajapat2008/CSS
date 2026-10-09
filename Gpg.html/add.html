@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .translate-example1 {
+  transform: translate(50px, 20px);
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  margin: auto;
+}
+
+.translate-example2 {
+  transform: translate(-30px, 0);
+  width: 100px;
+  height: 100px;
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px;
+  margin: auto;
+}
+
+.rotate-example1 {
+  transform: rotate(45deg);
+  width: 100px;
+  height: 100px;
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px;
+  margin: auto;
+}
+
+.rotate-example2 {
+  transform: rotate(-30deg);
+  width: 100px;
+  height: 100px;
+  background-color: #f1c40f;
+  color: black;
+  padding: 10px;
+  margin: auto;
+}
+
+.scalex-example1 {
+  transform: scaleX(1.5);
+  width: 100px;
+  height: 100px;
+  background-color: #9b59b6;
+  color: white;
+  padding: 10px;
+  margin: auto;
+}
+
+.scalex-example2 {
+  transform: scaleX(-1);
+  width: 100px;
+  height: 100px;
+  background-color: #1abc9c;
+  color: white;
+  padding: 10px;
+  margin: auto;
+}
+
+.scaley-example1 {
+  transform: scaleY(0.8);
+  width: 100px;
+  height: 100px;
+  background-color: #e67e22;
+  color: white;
+  padding: 10px;
+  margin: auto;
+}
+
+.skewx-example1 {
+  transform: skewX(20deg);
+  width: 100px;
+  height: 100px;
+  background-color: #27ae60;
+  color: white;
+  padding: 10px;
+  margin: auto;
+}
+
+.skewx-example2 {
+  transform: skewX(-15deg);
+  width: 100px;
+  height: 100px;
+  background-color: #d35400;
+  color: white;
+  padding: 10px;
+  margin: auto;
+}
+
+.skewy-example1 {
+  transform: skewY(20deg);
+  width: 100px;
+  height: 100px;
+  background-color: #2980b9;
+  color: white;
+  padding: 10px;
+  margin: auto;
+}
+
+.skew-example1 {
+  transform: skew(20deg, 10deg);
+  width: 100px;
+  height: 100px;
+  background-color: #16a085;
+  color: white;
+  padding: 10px;
+  margin: auto;
+}
+
+.matrix-example1 {
+  transform: matrix(1.2, 0, 0, 1.2, 50, 0);
+  width: 100px;
+  height: 100px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px;
+  margin: auto;
+}
+
+
+
+.perspective-example1 {
+  perspective: 10000px;
+}
+.perspective-example1 .inner {
+  transform: rotateY(45deg);
+  width: 300px;
+  height: 200px;
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  margin: auto;
+}
+
+/* .perspective-parent {
+  perspective: 400px;
+}
+.translate3d-example1 {
+  transform: translate3d(50px, 20px, 10px);
+  width: 100px;
+  height: 100px;
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px;
+} */
+
+.perspective-parent {
+     transform: scale3d(1.3, 2, 2.5) rotate3d(45deg); 
+  perspective: 700px;
+  margin: 100px;
+  width: 250px;
+  border: 2px solid black;
+}
+.scale3d-example1 {
+  width: 100px;
+  height: 100px;
+  background-color: #9b59b6;
+  color: white;
+  padding: 20px;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="translate-example1">Translated 50px right, 20px down</div>
+    
+    <div class="translate-example2">Translated 30px left</div>
+
+   <div class="rotate-example1">Rotated 45 degrees clockwise</div>
+
+   <div class="rotate-example2">Rotated 30 degrees counterclockwise</div>
+
+   <div class="scalex-example1">Scaled 1.5x horizontally</div>
+
+    <div class="scalex-example2">Flipped horizontally</div>
+
+    <div class="scaley-example1">Scaled 0.8x vertically</div>
+
+   <div class="skewx-example1">Skewed 20 degrees on x-axis</div>
+
+  <div class="skewx-example2">Skewed -15 degrees on x-axis</div>
+
+   <div class="skewy-example1">Skewed 20 degrees on y-axis</div>
+
+   <div class="skew-example1">Skewed 20deg x, 10deg y</div>
+
+   <div class="matrix-example1">Translated 50px right, scaled 1.2x</div>
+
+
+
+    <div class="perspective-example1">
+  <div class="inner">Box with perspective 500px</div>
+</div>
+
+<!-- <div class="perspective-parent">
+  <div class="translate3d-example1">Translated 50px right, 20px down, 30px forward</div>
+</div> -->
+
+<div class="perspective-parent">
+  <div class="scale3d-example1">Scaled 1.5x x-axis, 1x y-axis, 2x z-axis</div>
+</div>
+
+</body>
+</html>
