@@ -13,7 +13,9 @@
   background-color: #3498db;
   color: white;
   padding: 10px;
-  margin: auto;
+   animation-name: spin-circle;
+  animation-duration: 3s; 
+  animation-iteration-count: infinite;
 }
 
 .translate-example2 {
@@ -24,6 +26,9 @@
   color: white;
   padding: 10px;
   margin: auto;
+   animation-name: spin-circle;
+  animation-duration: 0.3s; 
+  animation-iteration-count: infinite;
 }
 
 .rotate-example1 {
@@ -33,7 +38,9 @@
   background-color: #2ecc71;
   color: white;
   padding: 10px;
-  margin: auto;
+   animation-name: spin-circle;
+  animation-duration: 3s; 
+  animation-iteration-count: infinite;
 }
 
 .rotate-example2 {
@@ -44,6 +51,9 @@
   color: black;
   padding: 10px;
   margin: auto;
+   animation-name: spin-circle;
+  animation-duration: 0.3s; 
+  animation-iteration-count: infinite;
 }
 
 .scalex-example1 {
@@ -53,7 +63,9 @@
   background-color: #9b59b6;
   color: white;
   padding: 10px;
-  margin: auto;
+   animation-name: spin-circle;
+  animation-duration: 3s; 
+  animation-iteration-count: infinite;
 }
 
 .scalex-example2 {
@@ -64,6 +76,9 @@
   color: white;
   padding: 10px;
   margin: auto;
+   animation-name: spin-circle;
+  animation-duration: 0.3s; 
+  animation-iteration-count: infinite;
 }
 
 .scaley-example1 {
@@ -73,7 +88,9 @@
   background-color: #e67e22;
   color: white;
   padding: 10px;
-  margin: auto;
+   animation-name: spin-circle;
+  animation-duration: 3s; 
+  animation-iteration-count: infinite;
 }
 
 .skewx-example1 {
@@ -84,6 +101,9 @@
   color: white;
   padding: 10px;
   margin: auto;
+   animation-name: spin-circle;
+  animation-duration: 0.3s; 
+  animation-iteration-count: infinite;
 }
 
 .skewx-example2 {
@@ -93,7 +113,9 @@
   background-color: #d35400;
   color: white;
   padding: 10px;
-  margin: auto;
+   animation-name: spin-circle;
+  animation-duration: 3s; 
+  animation-iteration-count: infinite;
 }
 
 .skewy-example1 {
@@ -104,6 +126,9 @@
   color: white;
   padding: 10px;
   margin: auto;
+   animation-name: spin-circle;
+  animation-duration: 0.3s; 
+  animation-iteration-count: infinite;
 }
 
 .skew-example1 {
@@ -113,7 +138,9 @@
   background-color: #16a085;
   color: white;
   padding: 10px;
-  margin: auto;
+   animation-name: spin-circle;
+  animation-duration: 0.3s; 
+  animation-iteration-count: infinite;
 }
 
 .matrix-example1 {
@@ -124,6 +151,9 @@
   color: white;
   padding: 10px;
   margin: auto;
+   animation-name: spin-circle;
+  animation-duration: 0.3s; 
+  animation-iteration-count: infinite;
 }
 
 
@@ -139,7 +169,9 @@
   background-color: #3498db;
   color: white;
   padding: 10px;
-  margin: auto;
+   animation-name: spin-circle;
+  animation-duration: 0.3s; 
+  animation-iteration-count: infinite;
 }
 
 .perspective-parent {
@@ -167,6 +199,35 @@
   background-color: #9b59b6;
   color: white;
   padding: 20px;
+   animation-name: spin-circle;
+  animation-duration: 0.3s; 
+  animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+@keyframes spin-circle {
+  from { 
+    transform: translateX(8800px);
+   }
+  to { 
+    transform: translateX(200px);
+    background-color: #d35400;
+   }
+}
+.animation {
+  width: 100px;
+  height: 100px;
+  background-color: #9b59b6;
+  color: white;
+  padding: 10px;
+  animation-name: spin-circle;
+  animation-duration: 3s; 
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
 }
 
     </style>
@@ -212,6 +273,11 @@
   <div class="scale3d-example1">Scaled 1.5x x-axis, 1x y-axis, 2x z-axis</div>
 </div>
 
+
+
+<div class="animation">
+
+</div>
 
 
 </body>
