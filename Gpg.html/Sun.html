@@ -40,11 +40,11 @@
         }
 
     
-        .orbit {
+        .p {
             position: absolute;
             top: 50%;
             left: 50%;
-            /* border: 2px solid wheat; */
+            border: 2px solid wheat;
             border-radius: 50%;
             transform: translate(-50%, -50%);
             animation: rotate linear infinite;
@@ -62,34 +62,34 @@
         }
 
     
-        .orbit1 {
+        .d1 {
             width: 20%;
             aspect-ratio: 1;
-            animation-duration: 5s;
+            animation-duration: 20s;
         }
 
-        .orbit2 {
+        .d2 {
             width: 35%;
             aspect-ratio: 1;
-            animation-duration: 7s;
+            animation-duration: 18s;
         }
 
-        .orbit3 {
+        .d3 {
             width: 50%;
             aspect-ratio: 1;
-            animation-duration: 9s;
+            animation-duration: 14s;
         }
 
-        .orbit4 {
+        .d4 {
             width: 65%;
             aspect-ratio: 1;
             animation-duration: 11s;
         }
 
-        .orbit5 {
+        .d5 {
             width: 80%;
             aspect-ratio: 1;
-            animation-duration: 13s;
+            animation-duration: 20s;
         }
 
         
@@ -103,11 +103,7 @@
             }
         }
 
-        @media (prefers-reduced-motion: reduce) {
-            .orbit {
-                animation: none;
-            }
-        }
+    
     </style>
 </head>
 
@@ -118,26 +114,26 @@
         <div class="sun" aria-label="Sun"></div>
 
         
-        <div class="orbit orbit1">
+        <div class="p d1">
             <img class="planet" src="https://images-assets.nasa.gov/image/PIA15162/PIA15162~orig.jpg">
         </div>
 
      
-        <div class="orbit orbit2">
+        <div class="p d2">
             <img class="planet" src="https://images-assets.nasa.gov/image/PIA00271/PIA00271~orig.jpg">
         </div>
 
       
-        <div class="orbit orbit3">
+        <div class="p d3">
             <img class="planet" src="https://images-assets.nasa.gov/image/PIA18033/PIA18033~orig.jpg">
         </div>
 
       
-        <div class="orbit orbit4">
+        <div class="p d4">
             <img class="planet" src="https://images-assets.nasa.gov/image/PIA00407/PIA00407~orig.jpg">
         </div>
 
-        <div class="orbit orbit5">
+        <div class="p d5">
            <img class="planet" src="https://images-assets.nasa.gov/image/PIA15162/PIA15162~orig.jpg">
         </div>
 
