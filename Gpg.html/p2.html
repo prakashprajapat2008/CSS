@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Background Styles */
+        html {
+            min-height: 100%;
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        /* Body */
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Row */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: gold;
+            border: 3px dashed black;
+            padding: 20px;
+            margin-bottom: 20px;
+            gap: 10px;
+        }
+
+        /* Column */
+        .col {
+            min-width: 0;
+            border: 3px solid #333;
+            background-color: #dfdfdf;
+            font-size: 20px;
+            padding: 15px;
+            text-align: center;
+            overflow-wrap: anywhere;
+        }
+
+        /* Mobile: Below 576px */
+        @media (max-width: 575.98px) {
+            body {
+                padding: 10px;
+            }
+
+            .row {
+                padding: 10px;
+                gap: 8px;
+            }
+
+            .col {
+                flex: 1 1 100%;
+                font-size: 16px;
+            }
+
+
+        }
+
+        /* Tablet: 576px and above */
+        @media (min-width: 576px) {
+            body {
+                padding: 20px;
+            }
+
+            .row {
+                gap: 10px;
+            }
+
+            .col {
+                flex: 1 1 0;
+                font-size: 18px;
+            }
+
+            .row-5 .col-3 {
+                flex: 1 1 calc(50% - 10px);
+            }
+
+            .row-4 .col-1 {
+                flex: 1 1 calc(50% - 10px);
+            }
+        }
+
+        /* Desktop / Laptop: 768px and above */
+        @media (min-width: 768px) {
+            body {
+                padding: 30px;
+            }
+
+            .col {
+                font-size: 20px;
+            }
+
+            /* Row 2 */
+            .row-2 .col {
+                flex: 1 1 calc(50% - 10px);
+            }
+
+            /* Row 3 */
+            .row-3 .col-1 {
+                flex: 1 1 calc(50% - 10px);
+            }
+
+            .row-3 .col-2 {
+                flex: 2 1 calc(5% - 10px);
+            }
+
+            /* Row 5 */
+            .row-5 .col-1 {
+                flex: 1 1 calc(50% - 10px);
+            }
+
+            .row-5 .col-2 {
+                flex: 1 1 calc(50% - 10px);
+            }
+
+            .row-5 .col-3 {
+                flex: 1 1 calc(75% - 10px);
+            }
+
+            /* Row 4 */
+            .row-4 .col-1 {
+                flex: 1 1 calc(25% - 10px);
+            }
+        }
+
+   
+    </style>
+
+</head>
+
+<body>
+
+    <div class="row row-1">
+        <div class="col col-1">1</div>
+        <div class="col col-2">2</div>
+        <div class="col col-3">3</div>
+        <div class="col col-4">4</div>
+    </div>
+
+    <div class="row row-2">
+        <div class="col col-1">1</div>
+        <div class="col col-2">2</div>
+    </div>
+
+    <div class="row row-3">
+        <div class="col col-1">1</div>
+        <div class="col col-2">2</div>
+    </div>
+
+    <div class="row row-4">
+        <div class="col col-1">1</div>
+    </div>
+
+    <div class="row row-5">
+        <div class="col col-1">1</div>
+        <div class="col col-2">2</div>
+        <div class="col col-3">3</div>
+    </div>
+
+</body>
+
+</html>
