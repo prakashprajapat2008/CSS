@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .p {
+            width: 400px;
+            height: 400px;
+            border: 4px solid red;
+            flex-direction: column;
+        }
+
+        .pp {
+            width: 250px;
+            height: 250px;
+            background-color: red;
+            clip-path: circle(50% at left);
+        }
+
+        .ppp {
+            width: 250px;
+            height: 250px;
+            background-color: red;
+            clip-path: circle(50%);
+        }
+
+        .pppp {
+            width: 250px;
+            height: 250px;
+            background-color: red;
+            clip-path: ellipse(40% 40% at 20% 20%);
+        }
+
+        .ppppp {
+            width: 250px;
+            height: 250px;
+            background-color: rgb(38, 10, 196);
+            clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+        }
+
+        .pppppp {
+            width: 250px;
+            height: 250px;
+            background-color: rgb(38, 10, 196);
+            clip-path: polygon(50% 0%, 100% 100%, 100% 100%);
+        }
+
+        .d {
+            width: 100%;
+            height: 50%;
+            background-color: rgb(196, 53, 10);
+            clip-path: polygon(100% 0%, 50% 100%, 0% 0%);
+        }
+
+        .dd {
+            width: 100%;
+            height: 50%;
+            background-color: rgb(14, 13, 16);
+            clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+        }
+
+        .ddd{
+            width: 100%;
+            height: 100%;
+          border: 2px solid red;
+          position: relative;
+          top: -400px;
+           background-color: rgba(20, 47, 220, 0.977);
+            clip-path: polygon(0% 0%, 50% 50%, 0% 100%);
+        } 
+
+          .dddd{
+            width: 100%;
+            height: 100%;
+          border: 2px solid red;
+          position: relative;
+          top: -803px;
+          margin-left: -2px;
+           background-color: orange;
+            clip-path: polygon(100% 0%, 50% 50%, 100% 100%);
+        } 
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="p">
+        <div class="d"></div>
+        <div class="dd"></div>
+        <div class="ddd"></div>
+        <div class="dddd"></div>
+    </div>
+
+    <div class="pp"></div>
+
+    <div class="ppp"></div>
+
+    <div class="pppp"></div>
+
+    <div class="ppppp"></div>
+
+    <div class="pppppp"></div>
+
+</body>
+
+</html>
